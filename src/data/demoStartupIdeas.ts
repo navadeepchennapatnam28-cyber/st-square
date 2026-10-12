@@ -1,0 +1,117 @@
+import { StartupIdea } from '../types';
+
+export const initialDemoStartupIdeas: StartupIdea[] = [
+  {
+    id: 'idea-1',
+    title: 'CodeMentor AI: Instant Viva & Lab Examiner',
+    problemStatement: 'Engineering students struggle with oral viva preparation and debugging under time pressure during university practical lab examinations.',
+    proposedSolution: 'An AI-powered voice agent that inspects student code, asks adaptive viva questions, grades algorithmic answers, and provides feedback.',
+    domain: 'EdTech',
+    requiredSkills: ['React', 'FastAPI', 'Gemini Audio API', 'WebRTC'],
+    stage: 'Prototype',
+    teamRequirements: 'Looking for 1 Backend Dev (FastAPI) and 1 Prompt Engineer / Audio ML specialist.',
+    founderName: 'Aarav Sharma',
+    founderEmail: 'aarav.sharma@st2.edu',
+    saved: true,
+    createdAt: '2026-09-18',
+    upvotes: 42,
+    collaboratorsNeeded: 2,
+  },
+  {
+    id: 'idea-2',
+    title: 'ByteBite: Campus Food Delivery via Student Walkers',
+    problemStatement: 'Hostel mess lines are 40+ minutes long during exam weeks, while local canteen food delivery takes hours to reach student rooms.',
+    proposedSolution: 'Peer-to-peer micro delivery app where students walking back from class deliver meals to dorm rooms for campus credits and micro-stipends.',
+    domain: 'Campus Life',
+    requiredSkills: ['Flutter / React Native', 'Node.js', 'Firebase', 'UPI Deep Linking'],
+    stage: 'Validation',
+    teamRequirements: 'Needs a Mobile Frontend developer and a Campus Operations lead.',
+    founderName: 'Rhea Sen',
+    founderEmail: 'rhea.sen@st2.edu',
+    saved: false,
+    createdAt: '2026-10-01',
+    upvotes: 89,
+    collaboratorsNeeded: 2,
+  },
+  {
+    id: 'idea-3',
+    title: 'SustainaCycle: Automated Hostel E-Waste Recycler',
+    problemStatement: 'Over 2,000 electronics components and batteries are discarded into general landfill every semester across campus hostels.',
+    proposedSolution: 'Reverse vending smart deposit lockers with computer vision component identification rewarding students with discount coupons.',
+    domain: 'CleanTech',
+    requiredSkills: ['YOLOv8', 'Embedded C/Arduino', 'React Native', 'Hardware CAD'],
+    stage: 'MVP Ready',
+    teamRequirements: 'Seeking an IoT Hardware specialist and a UI/UX designer.',
+    founderName: 'Karthik Rao',
+    founderEmail: 'karthik.rao@st2.edu',
+    saved: true,
+    createdAt: '2026-08-25',
+    upvotes: 67,
+    collaboratorsNeeded: 1,
+  },
+  {
+    id: 'idea-4',
+    title: 'FinStudent: Micro-Investment Pool for Collegiate Projects',
+    problemStatement: 'Cap-stone and final year projects struggle to buy hardware components ($50-$200) due to cumbersome university procurement cycles.',
+    proposedSolution: 'Crowd-micro-funding portal where alumni and parents fund vetted hardware student projects in exchange for prototype royalties and mentorship.',
+    domain: 'FinTech',
+    requiredSkills: ['Solidity / Smart Contracts', 'React', 'TypeScript', 'Node.js'],
+    stage: 'Ideation',
+    teamRequirements: 'Seeking a Full-Stack developer and a Regulatory / FinTech researcher.',
+    founderName: 'Neha Verma',
+    founderEmail: 'neha.verma@st2.edu',
+    saved: false,
+    createdAt: '2026-10-08',
+    upvotes: 31,
+    collaboratorsNeeded: 3,
+  }
+];
+
+export const demoCollaboratorProfiles = [
+  {
+    id: 'collab-1',
+    name: 'Devansh Saxena',
+    batch: 'CSE 2027',
+    avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80',
+    skills: ['React', 'Next.js', 'Tailwind', 'Figma'],
+    lookingFor: 'EdTech / SaaS startup seeking Frontend specialist',
+    availability: '10 hrs/week',
+  },
+  {
+    id: 'collab-2',
+    name: 'Pooja Iyer',
+    batch: 'ECE 2026',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
+    skills: ['Python', 'FastAPI', 'PyTorch', 'Computer Vision'],
+    lookingFor: 'AI / CleanTech projects needing CV pipeline',
+    availability: '15 hrs/week',
+  },
+  {
+    id: 'collab-3',
+    name: 'Vikram Joshi',
+    batch: 'CSE 2027',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    skills: ['PostgreSQL', 'Docker', 'Go', 'AWS'],
+    lookingFor: 'High concurrency backend infrastructure',
+    availability: '12 hrs/week',
+  }
+];
+
+export const demoIncubatorPrograms = [
+  {
+    id: 'inc-1',
+    title: 'ST² Catalyst Grant 2026',
+    grantAmount: '₹5,00,000 Equity-Free',
+    deadline: 'November 15, 2026',
+    eligibility: 'Student teams with working prototype and 2+ faculty endorsements',
+    category: 'Grant & Mentorship',
+  },
+  {
+    id: 'inc-2',
+    title: 'T-Hub Collegiate Incubation Cohort',
+    grantAmount: 'Coworking space + ₹2 Lakh POC funding',
+    deadline: 'December 01, 2026',
+    eligibility: 'Open to AI & CleanTech student founders',
+    category: 'Incubation',
+  }
+];
