@@ -10,6 +10,7 @@ import {
 } from '../../types';
 import {
   Briefcase,
+  Users,
   TrendingUp,
   Award,
   DollarSign,
