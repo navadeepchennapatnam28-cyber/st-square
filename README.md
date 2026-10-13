@@ -184,7 +184,6 @@ Open `http://localhost:5173` in your browser.
 
 Access the production deployment directly on Netlify:
 * 🔗 **Live Website:** [https://stsquare.netlify.app](https://stsquare.netlify.app)
-* 🔐 **Login Portal:** [https://stsquare.netlify.app/login](https://stsquare.netlify.app/login)
 
 ---
 
