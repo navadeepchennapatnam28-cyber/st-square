@@ -1,4 +1,5 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
+declare const process: { env?: Record<string, string | undefined> } | undefined;
 
 // Minimal typing for the optional `process` fallback (Node types aren't loaded in the browser build)
 declare const process: { env?: Record<string, string | undefined> };
