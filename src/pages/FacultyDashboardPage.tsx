@@ -508,7 +508,7 @@ export const FacultyDashboardPage: React.FC = () => {
                   <div key={a.id} className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
                     <div className="flex items-center justify-between gap-2 mb-1">
                       <span className="text-xs font-bold text-[#FFF8F0]">{a.title}</span>
-                      <Badge variant={a.priority === 'Urgent' ? 'danger' : 'amber'} size="xs">{a.priority}</Badge>
+                      <Badge variant={a.priority === 'Urgent' ? 'red' : 'amber'} size="sm">{a.priority}</Badge>
                     </div>
                     <p className="text-[11px] text-[#C5B5A8] line-clamp-2">{a.content}</p>
                     <div className="flex items-center gap-2 mt-2 text-[10px] text-[#8F8176]">
@@ -549,14 +549,14 @@ export const FacultyDashboardPage: React.FC = () => {
                             <p className="text-[10px] text-[#8F8176] font-mono">{s.rollNo}</p>
                           </div>
                         </div>
-                        <Badge variant="danger" size="xs">{s.attendancePct}% Att</Badge>
+                        <Badge variant="red" size="sm">{s.attendancePct}% Att</Badge>
                       </div>
 
                       <div className="mt-2.5 flex items-center justify-between pt-2 border-t border-rose-500/10 text-[11px]">
                         <span className="text-[#C5B5A8] truncate max-w-[180px]">{s.topWeakness}</span>
                         <Button
                           variant="ghost"
-                          size="xs"
+                          size="sm"
                           onClick={() => {
                             setActiveStudent(s);
                             setInterventionModalOpen(true);
@@ -668,8 +668,8 @@ export const FacultyDashboardPage: React.FC = () => {
                     </td>
                     <td className="py-3 px-3">
                       <Badge
-                        variant={s.riskLevel === 'Safe' ? 'success' : s.riskLevel === 'Moderate' ? 'amber' : 'danger'}
-                        size="xs"
+                        variant={s.riskLevel === 'Safe' ? 'green' : s.riskLevel === 'Moderate' ? 'amber' : 'red'}
+                        size="sm"
                       >
                         {s.riskLevel}
                       </Badge>
@@ -677,7 +677,7 @@ export const FacultyDashboardPage: React.FC = () => {
                     <td className="py-3 px-3 text-right">
                       <Button
                         variant="secondary"
-                        size="xs"
+                        size="sm"
                         onClick={() => {
                           setActiveStudent(s);
                           setInterventionModalOpen(true);
@@ -749,7 +749,7 @@ export const FacultyDashboardPage: React.FC = () => {
                     </div>
 
                     <Badge
-                      variant={unit.status === 'Completed' ? 'success' : 'orange'}
+                      variant={unit.status === 'Completed' ? 'green' : 'orange'}
                       size="sm"
                     >
                       {unit.status}
@@ -917,8 +917,8 @@ export const FacultyDashboardPage: React.FC = () => {
                       <td className="py-3 px-3 text-[#A69B91]">{sub.submissionDate}</td>
                       <td className="py-3 px-3">
                         <Badge
-                          variant={sub.status === 'graded' ? 'success' : 'amber'}
-                          size="xs"
+                          variant={sub.status === 'graded' ? 'green' : 'amber'}
+                          size="sm"
                         >
                           {sub.status === 'graded' ? 'Graded' : 'Pending Review'}
                         </Badge>
@@ -933,7 +933,7 @@ export const FacultyDashboardPage: React.FC = () => {
                       <td className="py-3 px-3 text-right">
                         <Button
                           variant="secondary"
-                          size="xs"
+                          size="sm"
                           onClick={() => {
                             setActiveSubmission(sub);
                             setGradeInput({ marks: sub.obtainedMarks || 92, feedback: sub.facultyFeedback || '' });
@@ -1081,7 +1081,7 @@ export const FacultyDashboardPage: React.FC = () => {
                     </div>
                     <h4 className="text-base font-bold text-[#FFF8F0] mt-1">{a.title}</h4>
                   </div>
-                  <Badge variant={a.priority === 'Urgent' ? 'danger' : 'amber'} size="sm">
+                  <Badge variant={a.priority === 'Urgent' ? 'red' : 'amber'} size="sm">
                     {a.priority}
                   </Badge>
                 </div>

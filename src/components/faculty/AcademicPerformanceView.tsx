@@ -511,7 +511,7 @@ export const AcademicPerformanceView: React.FC<Props> = ({ onOpenIntervention })
                     </div>
                   </td>
                   <td className="py-3.5 px-3">
-                    <Badge variant={c.passPercentage >= 95 ? 'success' : 'amber'} size="sm">
+                    <Badge variant={c.passPercentage >= 95 ? 'green' : 'amber'} size="sm">
                       {c.passPercentage}%
                     </Badge>
                   </td>
@@ -564,7 +564,7 @@ export const AcademicPerformanceView: React.FC<Props> = ({ onOpenIntervention })
                 <div>
                   <div className="flex items-center gap-2 mb-1">
                     <span className="text-xs font-mono font-bold text-[#FF8C32]">{asm.courseCode}</span>
-                    <Badge variant="neutral" size="sm">{asm.type}</Badge>
+                    <Badge variant="gray" size="sm">{asm.type}</Badge>
                   </div>
                   <h4 className="text-sm font-bold text-[#FFF8F0]">{asm.title}</h4>
                 </div>
@@ -609,7 +609,7 @@ export const AcademicPerformanceView: React.FC<Props> = ({ onOpenIntervention })
               Automated institutional telemetry flagging students experiencing ≥ 0.5 CGPA drop, attendance margins &lt; 75%, or subject struggle.
             </p>
           </div>
-          <Badge variant="danger" size="sm">
+          <Badge variant="red" size="sm">
             {filteredDeclining.length} AT-RISK SCHOLARS
           </Badge>
         </div>
