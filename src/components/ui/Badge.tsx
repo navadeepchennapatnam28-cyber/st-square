@@ -2,8 +2,8 @@ import React from 'react';
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: 'blue' | 'cyan' | 'green' | 'purple' | 'amber' | 'orange' | 'red' | 'rose' | 'gray';
-  size?: 'sm' | 'md';
+  variant?: 'blue' | 'cyan' | 'green' | 'purple' | 'amber' | 'orange' | 'red' | 'rose' | 'gray' | 'success' | 'danger' | 'neutral';
+  size?: 'xs' | 'sm' | 'md';
   className?: string;
   icon?: React.ReactNode;
 }
@@ -16,6 +16,7 @@ export const Badge: React.FC<BadgeProps> = ({
   icon,
 }) => {
   const sizeClasses = {
+    xs: 'px-1.5 py-0.5 text-[9px]',
     sm: 'px-2 py-0.5 text-[10px]',
     md: 'px-2.5 py-1 text-xs',
   };
@@ -30,6 +31,9 @@ export const Badge: React.FC<BadgeProps> = ({
     red: 'bg-rose-500/15 text-rose-400 border border-rose-500/30',
     rose: 'bg-rose-500/15 text-rose-400 border border-rose-500/30 shadow-[0_0_12px_rgba(244,63,94,0.15)]',
     gray: 'bg-white/5 text-[#C5B5A8] border border-[rgba(255,248,240,0.12)]',
+    success: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30',
+    danger: 'bg-rose-500/15 text-rose-400 border border-rose-500/30',
+    neutral: 'bg-white/5 text-[#C5B5A8] border border-[rgba(255,248,240,0.12)]',
   };
 
   return (
