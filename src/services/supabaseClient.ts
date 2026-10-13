@@ -1,8 +1,4 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
-declare const process: { env?: Record<string, string | undefined> } | undefined;
-
-// Minimal typing for the optional `process` fallback (Node types aren't loaded in the browser build)
-declare const process: { env?: Record<string, string | undefined> };
 
 // Safe retrieval of environment variables
 const supabaseUrl = (import.meta.env?.VITE_SUPABASE_URL || '').trim();
@@ -22,10 +18,10 @@ export const isSupabaseConfigured = (): boolean => {
 // Singleton Supabase Client instance (or null if not configured)
 export const supabase: SupabaseClient | null = isSupabaseConfigured()
   ? createClient(supabaseUrl, supabaseAnonKey, {
-      auth: {
-        persistSession: true,
-        autoRefreshToken: true,
-        detectSessionInUrl: true,
-      },
-    })
+    auth: {
+      persistSession: true,
+      autoRefreshToken: true,
+      detectSessionInUrl: true,
+    },
+  })
   : null;

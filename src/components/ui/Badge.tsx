@@ -28,11 +28,11 @@ export const Badge: React.FC<BadgeProps> = ({
     cyan: 'bg-[#FFB347]/15 text-[#FFB347] border border-[rgba(255,179,71,0.30)]',
     purple: 'bg-[#FF8C32]/15 text-[#FFB347] border border-[rgba(255,140,50,0.30)]',
     green: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30',
+    success: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30',
     red: 'bg-rose-500/15 text-rose-400 border border-rose-500/30',
+    danger: 'bg-rose-500/15 text-rose-400 border border-rose-500/30',
     rose: 'bg-rose-500/15 text-rose-400 border border-rose-500/30 shadow-[0_0_12px_rgba(244,63,94,0.15)]',
     gray: 'bg-white/5 text-[#C5B5A8] border border-[rgba(255,248,240,0.12)]',
-    success: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30',
-    danger: 'bg-rose-500/15 text-rose-400 border border-rose-500/30',
     neutral: 'bg-white/5 text-[#C5B5A8] border border-[rgba(255,248,240,0.12)]',
   };
 
