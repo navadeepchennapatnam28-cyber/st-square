@@ -167,14 +167,13 @@ Start the development server:
 npm run dev
 ```
 
-Open [stsquare.netlify.app](stsquare.netlify.app) in your browser.
+Open [https://stsquare.netlify.app/login](https://stsquare.netlify.app/login) in your browser.
 
 ---
 
 ## 🔑 Pre-Configured Test Credentials
 
-For quick evaluation, use the pre-configured credentials directly on the [Login Page](
-stsquare.netlify.app)
+For quick evaluation, use the pre-configured credentials directly on the [Login Page](https://stsquare.netlify.app/login):
 
 | Role | Email | Password | Destination |
 | :--- | :--- | :--- | :--- |
