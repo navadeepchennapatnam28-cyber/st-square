@@ -25,6 +25,7 @@ import {
   Layers,
   ChevronRight,
   User,
+  Users,
   Sparkles,
   ExternalLink,
   Code2,
