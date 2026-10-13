@@ -7,14 +7,23 @@
 ### **Smarter Insights, Brighter Futures.**
 *A unified, production-ready institutional intelligence platform for continuous student telemetry, algorithmic growth coaching, and faculty governance.*
 
+[![Live Website](https://img.shields.io/badge/Live_Website-stsquare.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://stsquare.netlify.app)
+
 [![React 19](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS v4](https://img.shields.io/badge/TailwindCSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com/)
+[![Hosted on Netlify](https://img.shields.io/badge/Hosted_on-Netlify-00C7B7?logo=netlify&logoColor=white)](https://stsquare.netlify.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
 
 </div>
+
+---
+
+## 🌐 Live Website
+
+> 🚀 **Access the live web application:** **[https://stsquare.netlify.app](https://stsquare.netlify.app)**
 
 ---
 
@@ -167,13 +176,21 @@ Start the development server:
 npm run dev
 ```
 
-Open [https://stsquare.netlify.app/login](https://stsquare.netlify.app/login) in your browser.
+Open `http://localhost:5173` in your browser.
+
+---
+
+## 🌐 Live Web Application
+
+Access the production deployment directly on Netlify:
+* 🔗 **Live Website:** [https://stsquare.netlify.app](https://stsquare.netlify.app)
+* 🔐 **Login Portal:** [https://stsquare.netlify.app/login](https://stsquare.netlify.app/login)
 
 ---
 
 ## 🔑 Pre-Configured Test Credentials
 
-For quick evaluation, use the pre-configured credentials directly on the [Login Page](https://stsquare.netlify.app/login):
+For quick evaluation, use the pre-configured credentials directly on the [Login Page](https://stsquare.netlify.app):
 
 | Role | Email | Password | Destination |
 | :--- | :--- | :--- | :--- |
